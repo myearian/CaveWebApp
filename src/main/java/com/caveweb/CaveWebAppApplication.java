@@ -8,5 +8,6 @@ public class CaveWebAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CaveWebAppApplication.class, args);
+		System.out.println("Web Services Initiated.");
 	}
 }
