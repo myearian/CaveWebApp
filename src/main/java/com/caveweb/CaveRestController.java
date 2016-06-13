@@ -7,10 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-/**
- * Created by YearianYoga on 5/30/2016.
- */
-
 @RestController
 public class CaveRestController {
 
@@ -18,7 +14,7 @@ public class CaveRestController {
     private final AtomicLong counter = new AtomicLong();
 
     @Autowired
-    MenuOptions menuOptions = null;
+    MenuOptions menuOptions;
 
     @RequestMapping("/")
     public MenuOptions menuOptions(){
