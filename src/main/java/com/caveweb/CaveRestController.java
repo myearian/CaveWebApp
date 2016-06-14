@@ -19,7 +19,7 @@ public class CaveRestController {
     @RequestMapping("/")
     public MenuOptions menuOptions(){
 
-        String[] options = {"Greeting","Movie API", "XML Example", "JSON Example"};
+        String[] options = {"Greeting","Popular Movies App", "XML Example", "JSON Example"};
 
         menuOptions.setMenuOption(options);
 
