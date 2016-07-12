@@ -31,10 +31,10 @@ public class CaveRestController {
 
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name,
-                             @RequestParam(value = "number", defaultValue = "19XX") String number) {
+                             @RequestParam(value = "year", defaultValue = "19XX") String year) {
 
         return new Greeting(counter.incrementAndGet(),
-                String.format(template, name, number));
+                String.format(template, name, year));
     }
 
     @RequestMapping("/resource")

@@ -12,10 +12,17 @@
 
 <body ng-app="hello">
 <div class="container">
-    <h1>Greeting</h1>
     <div ng-controller="home" ng-cloak class="ng-cloak">
+        <h1>Greeting</h1>
         <p>The ID is {{greeting.id}}</p>
         <p>The content is {{greeting.content}}</p>
+        <br/>
+        <h1>Project Links</h1>
+		<ul>
+			{{#each menuOptions}}
+			<li><b>{{this}}</b></li>
+			{{/each}}
+		</ul>
     </div>
 </div>
 <script src="js/angular-bootstrap.js" type="text/javascript"></script>
